@@ -1,0 +1,519 @@
+
+#mainheader{
+height:42px;
+/*background-image:url(logo3.jpg);
+background-repeat:no-repeat;*/
+background-color:#626361;
+padding : 0px 30px 0px 30px;
+margin:0px 20px 0px 20px;
+border-radius:10px 10px 0px 0px;
+
+}
+body{
+margin : 0px;
+background-color:rgba(59, 66, 65, 0.94);
+}
+#headnav{
+background-color:darkgreen;
+height:35px;
+font-size: 25px;
+font-weight:bold;
+font:Tahoma;
+}
+
+li.navtabstyle{
+background-position:-100px bottom;
+border:1px solid blue;
+    position: relative;
+}
+#container1{
+height : 600px;
+padding : 0px 30px 30px 30px;
+margin:0px 20px 20px 20px;
+background-image:url(logo4.jpg);
+background-repeat:no-repeat;
+border-radius:0px 0px 10px 10px;
+}
+
+.head{
+background-color:white;
+margin:8px;
+}
+
+.horList{
+padding : 0;
+margin : 0;
+list-style-type : none;
+text-align: left;
+ 
+
+}
+.horli{
+display : inline;
+height : 15px;
+ float: left;
+vertical-align : middle;
+}
+.horli a{
+text-decoration : none;
+    display: block;
+    padding: 8px;   
+color: aliceblue;
+font-size: 22px;
+}
+#headnav a{
+text-decoration : none;
+coror : white;
+padding : 8px 8px 8px 8px;
+vertical-align : middle
+}
+ a:hover {
+color : black;
+background-color:white;
+border-radius:4px;
+}
+a.selected{
+color : brown;
+background-color:Ivory;
+border-radius:4px;
+}
+#searchform{
+float : right;
+width:20%;
+height:25px;
+border : 1px solid black;
+position:relative;
+border-radius:4px;
+background-color:white;
+margin-top:4px;
+border:radius:4px;
+}
+#searchIcon{
+float : right;
+right:0%;
+position:absolute;
+}
+#searchInput{
+width:80%;
+height:19px;
+border:radius:4px;
+}
+aside{
+float:right;
+height: 600px;
+background-color: #f1ddc2;
+width:20%;
+border-radius:4px;
+margin-right:10px;
+
+}
+/* #butterfly:hover{
+animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:50px; top:0px;}
+    50%  {background-color:blue; left:50px; top:50px;}
+    75%  {background-color:green; left:0px; top:50px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+ */
+
+
+div#butterfly{
+    position absolute;
+    left:0px;
+    top:0px;
+    width: 366px;
+    height: 208px;
+    float:right;
+    -webkit-transform: rotate(-20deg)  translate(30px, 60px) scale(0.8, 0.8);
+    -webkit-transform-origin: center center;
+    -moz-transform: rotate(-20deg)  translate(30px, 60px) scale(0.8, 0.8);
+    -moz-transform-origin: center center;
+}
+
+div#rightwing{
+    position: absolute;
+    left:0px;
+    top:0px;
+    width: 178px;
+    height: 208px;
+    background-image: url(http://www.eleqtriq.com/wp-content/static/demos/2010/css3d/img/wing.png);
+    background-repeat:no-repeat;
+    
+    -webkit-transform: rotate3d(0, 0, 0, 180deg); /* Mirror left wing */
+    -webkit-transform-origin: center right;
+    -webkit-animation-name: rightwingani;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    
+    -moz-transform: rotate3d(0, 0, 0, 180deg); /* Mirror left wing */
+    -moz-transform-origin: center right;
+    -moz-animation-name: rightwingani;
+    -moz-animation-duration: 6s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes rightwingani {
+    from {
+        -webkit-transform: rotate3d(0, 1, 0, 180deg);
+    }
+    30% {
+        -webkit-transform: rotate3d(0, 1, 0, 180deg);
+    }
+    50% {
+        -webkit-transform: rotate3d(0, 1, 0, 100deg);
+    }
+    70%{
+        -webkit-transform: rotate3d(0, 1, 0, 180deg);
+    }
+    to{
+        -webkit-transform: rotate3d(0, 1, 0, 180deg);
+    }
+}
+
+@-moz-keyframes rightwingani {
+    from {
+        -moz-transform: rotate3d(0, 1, 0, 180deg);
+    }
+    30% {
+        -moz-transform: rotate3d(0, 1, 0, 180deg);
+    }
+    50% {
+        -moz-transform: rotate3d(0, 1, 0, 100deg);
+    }
+    70%{
+        -moz-transform: rotate3d(0, 1, 0, 180deg);
+    }
+    to{
+        -moz-transform: rotate3d(0, 1, 0, 180deg);
+    }
+}
+
+div#leftwing{
+    position: absolute;
+    left:0px;
+    top:0px;
+    width: 178px;
+    height: 208px;
+    background-image: url(http://www.eleqtriq.com/wp-content/static/demos/2010/css3d/img/wing.png);
+    background-repeat: no-repeat;
+    
+    -webkit-transform-origin: top right;
+    -webkit-animation-name: leftwingani;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    
+    -moz-transform-origin: top right;
+    -moz-animation-name: leftwingani;
+    -moz-animation-duration: 6s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes leftwingani {
+    from {
+        -webkit-transform: rotate3d(0, 1, 0, 0deg);
+    }
+    30%  {
+        -webkit-transform: rotate3d(0, 1, 0, 0deg);
+    }
+    50% {
+        -webkit-transform: rotate3d(0, 1, 0, 80deg);
+    }
+    70%{
+        -webkit-transform: rotate3d(0, 1, 0, 00deg);
+    }
+    to{
+        -webkit-transform: rotate3d(0, 1, 0, 00deg);
+    }
+}
+
+
+@-moz-keyframes leftwingani {
+    from {
+        -moz-transform: rotate3d(0, 1, 0, 0deg);
+    }
+    30%  {
+        -moz-transform: rotate3d(0, 1, 0, 0deg);
+    }
+    50% {
+        -moz-transform: rotate3d(0, 1, 0, 80deg);
+    }
+    70%{
+        -moz-transform: rotate3d(0, 1, 0, 00deg);
+    }
+    to{
+        -moz-transform: rotate3d(0, 1, 0, 00deg);
+    }
+}
+
+
+
+.headname{
+ display: block;
+    margin-left: auto;
+    margin-right: auto ;
+}
+.headlogo{
+ float:left;
+}
+#searchinput{
+height:25px;
+}
+
+#maintext{
+margin-top:0px;
+margin-left:auto;
+margin-right:auto;
+width:60em;
+padding:2em;
+}
+#panel{
+width:80%;
+}
+h2.quote{
+margin-top:0px;
+margin-left:auto;
+margin-right:auto;
+width:33%;
+}
+.quotlist{
+margin-left:auto;
+margin-right:auto;
+}
+
+
+
+
+.arrow {
+    cursor: pointer;
+    display: block;
+    height: 64px;
+    margin-top: -35px;
+    outline: medium none;
+    position: absolute;
+    top: 50%;
+    width: 64px;
+    z-index: 5;
+}
+.arrow.prev {
+    background-image: url("left.png");
+    left: 20px;
+    opacity: 0.2;
+    transition: all 0.2s linear 0s;
+}
+.arrow.next {
+    background-image: url("right.png");
+    opacity: 0.2;
+    right: 20px;
+    transition: all 0.2s linear 0s;
+}
+.arrow.prev:hover{
+    opacity:1;
+}
+.arrow.next:hover{
+    opacity:1;
+}
+
+.nav {
+    bottom: -4px;
+    display: block;
+    height: 48px;
+    left: 0;
+    margin: 0 auto;
+    padding: 1em 0 0.8em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 5;
+}
+.nav li {
+    border: 5px solid #AAAAAA;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    margin: 0 8px;
+    position: relative;
+    width: 50px;
+}
+.nav li.active {
+    border: 5px solid #FFFFFF;
+}
+.nav li img {
+    width: 100%;
+}
+
+.slider {
+    border: 15px solid #FFFFFF;
+    border-radius: 5px;
+    height: 500px;
+    margin: 20px auto;
+    position: relative;
+    width: 800px;
+
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -ms-perspective: 1000px;
+    -o-perspective: 1000px;
+    perspective: 1000px;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slide.ng-hide-add {
+    opacity:1;
+
+    -webkit-transition:1s linear all;
+    -moz-transition:1s linear all;
+    -o-transition:1s linear all;
+    transition:1s linear all;
+
+    -webkit-transform: rotateX(50deg) rotateY(30deg);
+    -moz-transform: rotateX(50deg) rotateY(30deg);
+    -ms-transform: rotateX(50deg) rotateY(30deg);
+    -o-transform: rotateX(50deg) rotateY(30deg);
+    transform: rotateX(50deg) rotateY(30deg);
+
+    -webkit-transform-origin: right top 0;
+    -moz-transform-origin: right top 0;
+    -ms-transform-origin: right top 0;
+    -o-transform-origin: right top 0;
+    transform-origin: right top 0;
+}
+.slide.ng-hide-add.ng-hide-add-active {
+    opacity:0;
+}
+.slide.ng-hide-remove {
+    -webkit-transition:1s linear all;
+    -moz-transition:1s linear all;
+    -o-transition:1s linear all;
+    transition:1s linear all;
+
+    display:block!important;
+    opacity:0;
+}
+.slide, .slide.ng-hide-remove.ng-hide-remove-active {
+    opacity:1;
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+ figure { 
+  margin: 0; background: white;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+  
+}
+div#captioned-gallery { 
+  width: 100%; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 10s slidy infinite; 
+  height:50%;
+}
+figure.slider figure { 
+  width: 22%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 50%; height: auto; }
+figure.slider figure figcaption { 
+  position: absolute; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  color: #fff; width: 100%;
+  font-size: 2rem; padding: .6rem; 
+  
+}
+#welcome p{
+	font-size:20px;
+color:maroon;
+}
+#welcome b{
+	font-size:40px;
+	    color: #9a4b12;
+	
+
+}
+#text {
+    margin-left:200px;
+    color: red;
+    position: absolute;
+    -webkit-animation-name: example3; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: 3; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    animation-name: example3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example3 {
+    0%   {color:red; left:0px; top:0px;}
+    100%  {color:yellow; left:400px; top:0px;}
+   
+}
+
+/* Standard syntax */
+@keyframes example3 {
+   0%   {color:red; left:0px; top:0px;}
+    100%  {color:yellow; left:400px; top:0px;}
+}
+
+#text1 {
+    margin-right:50px;
+    margin-left:200px;
+    color: red;
+    position: absolute;
+    -webkit-animation-name: example4; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: 3; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    animation-name: example4;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example4 {
+    0%   {color:red; left:400px; top:0px;}
+    100%  {color:yellow; left:0px; top:0px;}
+   
+}
+
+/* Standard syntax */
+@keyframes example4 {
+   0%   {color:red; left:400px; top:0px;}
+    100%  {color:yellow; left:0px; top:0px;}
+}

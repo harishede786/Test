@@ -1,0 +1,87 @@
+<!doctype html>
+<html  ng-app="myApp">
+<head>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<meta charset="ISO-8859-1">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="app-js/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+<script src="http://code.angularjs.org/1.2.0rc1/angular-animate.min.js"></script>
+    <script src="http://code.angularjs.org/1.2.0rc1/angular-touch.min.js"></script>
+    <script src="app-js/youtube.js"></script>
+<script src="app-js/Chart.js"></script>
+<script src="ng-js/angular-chart.js"></script>
+<script src="app-js/application.js"></script>
+ 
+ 
+<title>Insert title here</title>
+</head>
+<body>
+<header class="head">
+<p>
+<p id="text"><b><del>sugar</del></b></p>
+<img src="css/logo1.jpg" alt="logo" class="headlogo" height="100" width="100"/>
+<img src="css/name.jpg" alt="logo" class="headname" height="100" width="180"/>
+<p id="text1"><b><del>alcohol</del></b></p>
+</p>
+
+</header>
+<aside>
+<h2 class="quote">Quotes</h2>
+<ul class="quotlist">
+<li ><p><cite><q>To keep the body in good health is a duty... otherwise we shall not be able to keep our mind strong and clear.</q></cite><br>- Buddha</p> </b>
+<li ><p><cite><q>When wealth is lost, nothing is lost; when health is lost, something is lost; when character is lost, all is lost.</q></cite><br>- Billy Graham</p> </b>
+<li><p><cite><q>Sleep is that golden chain that ties health and our bodies together.</q></cite><br>- Thomas Deckker</p> </b>
+<li><p><cite><q>It is no measure of health to be well adjusted to a profoundly sick society.</q></cite><br>- Jiddu Krishnamurti</p> </b>
+
+</ul>
+</aside>
+<section id="panel">
+<header id="mainheader">
+<form  id="searchform" ng-controller="serctrl" >
+  <input type="text" name="firstname" id="searchInput" ng-model="search" placeholder="google">
+ <a href=""><input type="image" src="css/search.png" id="searchIcon" alt="Submit" ng-click="redirectToGoogle()" width="30" height="25"></a>
+</form>
+
+<nav>
+<ul class="horList">
+<li class="horli" ><a href="#/doughnut" ><b>Stats</b></a></li>
+<li class="horli"><a href="#/yoga"><b>Yoga</b></a></li>
+<li class="horli"><a href="#/video"><b>Video</b></a></li>
+
+</ul>
+</nav>
+</header>
+
+<article id="container1">
+<section>
+<ng-view></ng-view>
+</section>
+</article>
+</section>
+<section>
+</section>
+
+<footer>
+<div id="container">
+    <div id="butterfly">
+        <div id="leftwing">
+        </div>
+        <div id="rightwing">
+        </div>
+    </div>
+</div>
+
+<!-- <div class="bookicon"><img src="books.jpg" alt="logo" class="headname" height="100" width="180"/></div> -->
+<!--<nav>
+      <a href="/archives">Archives</a> —    
+  <a href="/about">About me</a> —    
+  <a href="/copyright">Copyright</a>
+    </nav>-->
+<!-- <p class="quotelist">All rights reserved</p> -->
+</footer>
+</body>
+</html>
+
+
+
