@@ -45,13 +45,48 @@ myapp.controller("DoughnutCtrl", function ($scope) {
 	 
 	});*/
 myapp.controller("BarCtrl", function ($scope) {
+	Chart.defaults.global.colors = [];
+	//$scope.colors = ["#ff0000","#00ff00","#949FB1"];
+	//Chart.defaults.global.colors = [];
+	// $scope.colors =	[{"fill-color":"#ff0000"},{"fill-color":"#00ff00"},{"fill-color":"#949FB1"}];
+
+	 $scope.datasetOverride = [
+	                           {
+	                               fill: true,
+	                               backgroundColor: [
+	                              "#FF6384",
+	                              "#36A2EB",
+	                              "#FFCE56"
+	                               ]
+	                           },
+	                           {
+	                               fill: true,
+	                               backgroundColor: [
+	                              "#803690",
+	                              "#46BFBD",
+	                              "#FDB45C"
+	                               ]
+	                           }];
+	           
+	
+	
 	  $scope.labels = ['India', 'China', 'USA'];
 	  $scope.series = ['India', 'China', 'USA'];
-
+	 /* $scope.colorsEven = [{ 
+		    fillColor: 'rgba(59, 89, 152,0.2)',
+		    strokeColor: 'rgba(59, 89, 152,1)',
+		    pointColor: 'rgba(59, 89, 152,1)',
+		    pointStrokeColor: '#fff',
+		    pointHighlightFill: '#fff',
+		    pointHighlightStroke: 'rgba(59, 89, 152,0.8)'
+		  }];*/
 	  $scope.data = [
 	    [31.7, 20.8, 17.7],
 	    
 	  ];
+	  
+	         	    
+	         	  
 	});
 
 myapp.controller('serctrl', ['$scope', '$window', function ($scope, $window) {

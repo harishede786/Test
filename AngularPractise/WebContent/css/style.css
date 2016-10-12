@@ -353,6 +353,7 @@ margin-right:auto;
     width: 100%;
 }
 
+/*-------------------------Image slider -------------------------- */
 .slider {
     border: 15px solid #FFFFFF;
     border-radius: 5px;
@@ -445,7 +446,7 @@ figure.slider figure {
   width: 22%; height: auto;
   display: inline-block;  position: inherit; 
 }
-figure.slider img { width: 50%; height: auto; }
+figure.slider img { width: 40%; height: 200px; }
 figure.slider figure figcaption { 
   position: absolute; bottom: 0;
   background: rgba(0,0,0,0.4);
